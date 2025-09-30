@@ -39,11 +39,13 @@ do {
 
 echo "<hr>";
 
-// Bonus: Foreach dengan increment berbeda
-echo "<h3>4. BONUS - Kelipatan 10 (100, 110, 120, ..., 1000)</h3>";
-for($i=100; $i<=1000; $i+=10) {
-    echo $i." ";
-    if($i % 100 == 0) {
+/* 4. PERULANGAN FOREACH */
+echo "<h3>4. Menggunakan FOREACH</h3>";
+// Buat array dari 100 sampai 1000
+$angka = range(100, 1000); 
+foreach($angka as $index => $value) {
+    echo $value." ";
+    if($value % 20 == 0) {
         echo "<br>";
     }
 }
