@@ -39,14 +39,10 @@ do {
 
 echo "<hr>";
 
-/* 4. PERULANGAN FOREACH */
-echo "<h3>4. Menggunakan FOREACH</h3>";
-// Buat array dari 100 sampai 1000
-$angka = range(100, 1000); 
-foreach($angka as $index => $value) {
-    echo $value." ";
-    if($value % 20 == 0) {
-        echo "<br>";
-    }
+// 4. Perulangan FOREACH
+echo "PERULANGAN FOREACH <br>";
+$angka = range(100, 1000, 100); // membuat array dari 100 - 1000 dengan step 100
+foreach($angka as $nilai){
+    echo "Nilai : ".$nilai."<br>";
 }
 ?>
